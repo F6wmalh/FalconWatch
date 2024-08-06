@@ -30,7 +30,7 @@ export default function ChooseMediaScreen({ navigation }) {
         <Text style={styles.optionText}>Upload</Text>
         <Switch value={uploadEnabled} onValueChange={setUploadEnabled} />
       </View>
-      <TouchableOpacity style={styles.doneButton} onPress={() => navigation.navigate('Dashboard')}>
+      <TouchableOpacity style={styles.doneButton} onPress={() => navigation.navigate('Confirmation')}>
         <Text style={styles.doneButtonText}>Done</Text>
       </TouchableOpacity>
     </View>
@@ -101,3 +101,4 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
 });
+
