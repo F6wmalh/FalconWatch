@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableOpacity, Image } from 'react-native';
 
-export default function ReportIncidentScreen() {
+export default function ReportIncidentScreen({ navigation }) {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -18,7 +18,7 @@ export default function ReportIncidentScreen() {
         style={styles.textarea}
         multiline
       />
-      <TouchableOpacity style={styles.mediaButton}>
+      <TouchableOpacity style={styles.mediaButton} onPress={() => navigation.navigate('ChooseMedia')}>
         <Text style={styles.mediaButtonText}>Choose Media</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.submitButton}>
